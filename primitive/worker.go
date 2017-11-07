@@ -104,5 +104,9 @@ func (worker *Worker) RandomState(t ShapeType, a int) *State {
 		return NewState(worker, NewRandomRotatedEllipse(worker), a)
 	case ShapeTypePolygon:
 		return NewState(worker, NewRandomPolygon(worker, 4, false), a)
+	case ShapeTypeVerticalLine:
+		return NewState(worker, NewRandomVerticalLine(worker), a)
+	case ShapeTypeHorizontalLine:
+		return NewState(worker, NewRandomHorizontalLine(worker), a)
 	}
 }

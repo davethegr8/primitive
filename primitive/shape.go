@@ -22,4 +22,6 @@ const (
 	ShapeTypeQuadratic
 	ShapeTypeRotatedEllipse
 	ShapeTypePolygon
+	ShapeTypeVerticalLine
+	ShapeTypeHorizontalLine
 )
